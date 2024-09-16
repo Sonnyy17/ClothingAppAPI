@@ -1,0 +1,17 @@
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Infrastructure.deps.json
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Infrastructure.dll
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Infrastructure.pdb
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Application.dll
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Domain.dll
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Application.pdb
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Domain.pdb
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.dll
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\refint\Infrastructure.dll
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.pdb
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\ref\Infrastructure.dll
