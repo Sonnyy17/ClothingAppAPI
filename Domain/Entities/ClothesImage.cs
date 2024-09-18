@@ -9,10 +9,11 @@ namespace Domain.Entities
 {
     public class ClothesImage
     {
-        [Key]
         public string ImageID { get; set; }
-        public int ClothesID { get; set; }
+        public string ClothesID { get; set; }
         public string ImagePath { get; set; }
         public DateTime UploadedDate { get; set; }
+
+        public Clothes Clothes { get; set; }
     }
 }

@@ -9,9 +9,10 @@ namespace Domain.Entities
 {
     public class PaymentMethod
     {
-        [Key]
         public string PaymentMethodID { get; set; }
         public string MethodName { get; set; }
         public string Description { get; set; }
+
+        public ICollection<Payment> Payments { get; set; }
     }
 }

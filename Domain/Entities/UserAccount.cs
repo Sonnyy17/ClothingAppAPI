@@ -11,11 +11,16 @@ namespace Domain.Entities
 {
     public class UserAccount
     {
-        [Key]
         public string UserID { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime CreatedDate { get; set; }
         public DateTime? LastLoginDate { get; set; }
+        public string RoleID { get; set; }
+
+        public Role Role { get; set; }
+        public UserProfile UserProfile { get; set; }
+        public ICollection<Payment> Payments { get; set; }
+        public ICollection<Clothes> Clothes { get; set; }
     }
 }

@@ -9,9 +9,10 @@ namespace Domain.Entities
 {
     public class Role
     {
-        [Key]
         public string RoleID { get; set; }
         public string RoleName { get; set; }
         public string Description { get; set; }
+
+        public ICollection<UserAccount> UserAccounts { get; set; }
     }
 }

@@ -15,3 +15,6 @@ D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.dll
 D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\refint\Infrastructure.dll
 D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.pdb
 D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\ref\Infrastructure.dll
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.sourcelink.json
+D:\Project\ClothingAppAPI\Infrastructures\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+D:\Project\ClothingAppAPI\Infrastructures\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache

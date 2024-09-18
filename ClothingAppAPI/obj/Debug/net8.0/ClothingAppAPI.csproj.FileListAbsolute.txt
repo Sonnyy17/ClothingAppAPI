@@ -144,3 +144,4 @@ D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ClothingAppAPI.pdb
 D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ClothingAppAPI.genruntimeconfig.cache
 D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ref\ClothingAppAPI.dll
 D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\FluentAssertions.dll
+D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ClothingAppAPI.sourcelink.json

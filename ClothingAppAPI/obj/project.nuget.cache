@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+uDJ/zGEHTHJhkEiXObVIosVwoyUU4S7qK2Hp9Q+mSqGEqVm+ibfUiuoujJVhEPrT4hAfjwc5Xwqo4B4C6KPfA==",
+  "dgSpecHash": "H4l3oTbtTDaEZ1IKRlknbgtzO0+mkO6UVuZtBF5tqPifgf7kQi9C7rDlHLg/kjx4Ts/F3EW5MvZQgjMc71WUrw==",
   "success": true,
   "projectFilePath": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\ClothingAppAPI.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.8\\microsoft.entityframeworkcore.design.8.0.8.nupkg.sha512",
     "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.8\\microsoft.entityframeworkcore.relational.8.0.8.nupkg.sha512",
     "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.8\\microsoft.entityframeworkcore.sqlserver.8.0.8.nupkg.sha512",
-    "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.0\\microsoft.entityframeworkcore.tools.8.0.0.nupkg.sha512",
+    "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.8\\microsoft.entityframeworkcore.tools.8.0.8.nupkg.sha512",
     "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\MSI VN\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",

@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Category
+    public class ClothesCategory
     {
-        [Key]
         public string CategoryID { get; set; }
         public string CategoryName { get; set; }
         public string CategoryType { get; set; }
+
+        public ICollection<ClothesToCategory> ClothesToCategories { get; set; }
     }
 }
