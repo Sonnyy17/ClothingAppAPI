@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Project\\ClothingAppAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\controllers\\useraccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|solutionrelative:clothingappapi\\controllers\\useraccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|d:\\project\\clothingappapi\\infrastructures\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|solutionrelative:infrastructures\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\interfaces\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\controllers\\useraccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|solutionrelative:clothingappapi\\controllers\\useraccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|d:\\project\\clothingappapi\\infrastructures\\repositories\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +19,16 @@
       "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\services\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\interfaces\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\repositories\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\repositories\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\dtos\\accountdto\\updateroleaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\dtos\\accountdto\\updateroleaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,12 +87,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Infrastructure",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructures\\Infrastructure.csproj",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructures\\Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T05:29:31.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateRoleAccountDTO.cs",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\DTOs\\AccountDTO\\UpdateRoleAccountDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\AccountDTO\\UpdateRoleAccountDTO.cs",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\DTOs\\AccountDTO\\UpdateRoleAccountDTO.cs",
+              "RelativeToolTip": "Application\\DTOs\\AccountDTO\\UpdateRoleAccountDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T02:35:57.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserAccountsController.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\Controllers\\UserAccountsController.cs",
               "RelativeDocumentMoniker": "ClothingAppAPI\\Controllers\\UserAccountsController.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\Controllers\\UserAccountsController.cs",
               "RelativeToolTip": "ClothingAppAPI\\Controllers\\UserAccountsController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAAAFEAAABAAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAADwv3IAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-19T18:07:29.445Z",
               "EditorCaption": ""
@@ -97,9 +131,10 @@
               "RelativeDocumentMoniker": "Infrastructures\\Repositories\\UserAccountRepository.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Repositories\\UserAccountRepository.cs",
               "RelativeToolTip": "Infrastructures\\Repositories\\UserAccountRepository.cs",
-              "ViewState": "AQIAAKwAAAAAAAAAAAAwwLoAAAAJAAAA",
+              "ViewState": "AQIAAMUAAAAAAAAAAAAqwNMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T18:03:09.896Z"
+              "WhenOpened": "2024-09-19T18:03:09.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -109,33 +144,36 @@
               "RelativeDocumentMoniker": "Application\\Services\\UserAccountService.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Services\\UserAccountService.cs",
               "RelativeToolTip": "Application\\Services\\UserAccountService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswDQAAAAJAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAqwDgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T18:01:47.555Z"
+              "WhenOpened": "2024-09-19T18:01:47.555Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "IUserAccountService.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Interfaces\\IUserAccountService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IUserAccountService.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Interfaces\\IUserAccountService.cs",
               "RelativeToolTip": "Application\\Interfaces\\IUserAccountService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAzwBQAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAxwBIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T18:00:59.867Z"
+              "WhenOpened": "2024-09-19T18:00:59.867Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IUserAccountRepository.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Repositories\\IUserAccountRepository.cs",
               "RelativeDocumentMoniker": "Application\\Repositories\\IUserAccountRepository.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Repositories\\IUserAccountRepository.cs",
               "RelativeToolTip": "Application\\Repositories\\IUserAccountRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAyAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T17:59:54.408Z"
+              "WhenOpened": "2024-09-19T17:59:54.408Z",
+              "EditorCaption": ""
             }
           ]
         },

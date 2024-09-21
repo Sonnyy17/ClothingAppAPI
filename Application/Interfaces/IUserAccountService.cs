@@ -15,6 +15,7 @@ namespace Application.Interfaces
         Task<ViewAccountDTO> RegisterAsync(RegisterAccountDTO registerDTO);
         Task<ViewAccountDTO> LoginAsync(LoginAccountDTO loginDTO);
         Task<ViewAccountDTO> UpdateAsync(string userId, UpdateAccountDTO updateDTO);
-        Task<bool> DeleteByIdAsync(string userId);
+        Task<ViewAccountDTO> UpdateRoleAccountAsync(string userId, UpdateRoleAccountDTO updateRoleDTO);
+        Task DeleteByIdAsync(string userId);
     }
 }

@@ -46,10 +46,14 @@ namespace Application.Services
         {
             return await _repository.UpdateAsync(userId, updateDTO);
         }
-
-        public async Task<bool> DeleteByIdAsync(string userId)
+        public async Task<ViewAccountDTO> UpdateRoleAccountAsync(string userId, UpdateRoleAccountDTO updateRoleDTO)
         {
-            return await _repository.DeleteByIdAsync(userId);
+            return await _repository.UpdateRoleAccountAsync(userId, updateRoleDTO);
+        }
+
+        public async Task DeleteByIdAsync(string userId)
+        {
+            await _repository.DeleteByIdAsync(userId);
         }
     }
 }

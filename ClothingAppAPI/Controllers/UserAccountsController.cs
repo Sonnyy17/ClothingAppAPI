@@ -87,17 +87,30 @@ namespace ClothingAppAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpPut("{userId}/role")]
+        public async Task<IActionResult> UpdateRoleAccount(string userId, [FromBody] UpdateRoleAccountDTO updateRoleDTO)
+        {
+            try
+            {
+                var updatedUser = await _userAccountService.UpdateRoleAccountAsync(userId, updateRoleDTO);
+                return Ok(updatedUser);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         [HttpDelete("{userId}")]
         public async Task<IActionResult> DeleteById(string userId)
         {
             try
             {
                 await _userAccountService.DeleteByIdAsync(userId);
-                return NoContent();
+                return Ok(new { message = "Xóa tài khoản thành công." });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { message = ex.Message });
             }
         }
     }

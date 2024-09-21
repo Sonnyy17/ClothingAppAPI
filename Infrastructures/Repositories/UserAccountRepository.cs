@@ -174,16 +174,41 @@ namespace Infrastructure.Repositories
                 RoleID = user.RoleID
             };
         }
-
-        public async Task<bool> DeleteByIdAsync(string userId)
+        public async Task<ViewAccountDTO> UpdateRoleAccountAsync(string userId, UpdateRoleAccountDTO updateRoleDTO)
         {
             var user = await _context.UserAccounts.FindAsync(userId);
-            if (user == null) return false;
+            if (user == null)
+            {
+                throw new Exception("User không tồn tại.");
+            }
+
+            // Update RoleID
+            user.RoleID = updateRoleDTO.RoleID;
+
+            _context.UserAccounts.Update(user);
+            await _context.SaveChangesAsync();
+
+            return new ViewAccountDTO
+            {
+                UserID = user.UserID,
+                Username = user.Username,
+                Password = user.Password,
+                CreatedDate = user.CreatedDate,
+                LastLoginDate = user.LastLoginDate,
+                RoleID = user.RoleID
+            };
+        }
+
+        public async Task DeleteByIdAsync(string userId)
+        {
+            var user = await _context.UserAccounts.FindAsync(userId);
+            if (user == null)
+            {
+                throw new Exception("User không tồn tại.");
+            }
 
             _context.UserAccounts.Remove(user);
             await _context.SaveChangesAsync();
-
-            return true;
         }
 
         public async Task<string> GenerateNewUserIdAsync()
