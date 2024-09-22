@@ -145,3 +145,5 @@ D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ClothingAppAPI.genrunt
 D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ref\ClothingAppAPI.dll
 D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\FluentAssertions.dll
 D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ClothingAppAPI.sourcelink.json
+D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\CloudinaryDotNet.dll
+D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
