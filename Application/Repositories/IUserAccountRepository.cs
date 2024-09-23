@@ -17,6 +17,7 @@ namespace Application.Repositories
         Task<ViewAccountDTO> UpdateAsync(string userId, UpdateAccountDTO updateDTO);
         Task<ViewAccountDTO> UpdateRoleAccountAsync(string userId, UpdateRoleAccountDTO updateRoleDTO);
         Task DeleteByIdAsync(string userId);
+        Task UpdateLastLoginDateAsync(string username);
         Task<string> GenerateNewUserIdAsync();
     }
 }

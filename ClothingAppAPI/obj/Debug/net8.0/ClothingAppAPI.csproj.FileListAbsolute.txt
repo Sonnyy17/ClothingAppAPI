@@ -147,3 +147,6 @@ D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\FluentAssertions.dll
 D:\Project\ClothingAppAPI\ClothingAppAPI\obj\Debug\net8.0\ClothingAppAPI.sourcelink.json
 D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\CloudinaryDotNet.dll
 D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Project\ClothingAppAPI\ClothingAppAPI\bin\Debug\net8.0\BouncyCastle.Crypto.dll

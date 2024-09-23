@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Project\\ClothingAppAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|d:\\project\\clothingappapi\\infrastructures\\repositories\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|solutionrelative:infrastructures\\repositories\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|solutionrelative:clothingappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\interfaces\\icloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\interfaces\\icloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|solutionrelative:clothingappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\repositories\\iclothesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\repositories\\iclothesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\controllers\\clothescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,28 +23,52 @@
       "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\services\\clothesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\controllers\\useraccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|solutionrelative:clothingappapi\\controllers\\useraccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\dtos\\clothesdto\\clothescreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\dtos\\clothesdto\\clothescreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\services\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\services\\useraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\repositories\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\repositories\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\interfaces\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|solutionrelative:clothingappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|d:\\project\\clothingappapi\\clothingappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAEBEED6-D8A7-439B-A509-7885A5A8A0B8}|ClothingAppAPI\\ClothingAppAPI.csproj|solutionrelative:clothingappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|d:\\project\\clothingappapi\\infrastructures\\security\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|solutionrelative:infrastructures\\security\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\dtos\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\dtos\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\interfaces\\iclothesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iclothesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\interfaces\\icloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\interfaces\\icloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|d:\\project\\clothingappapi\\infrastructures\\repositories\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|solutionrelative:infrastructures\\repositories\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|d:\\project\\clothingappapi\\infrastructures\\repositories\\clothesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48850806-12EF-40CD-AA93-E7F07527793C}|Infrastructures\\Infrastructure.csproj|solutionrelative:infrastructures\\repositories\\clothesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\repositories\\iclothesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\repositories\\iclothesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\dtos\\clothesdto\\clothescreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|solutionrelative:application\\dtos\\clothesdto\\clothescreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5C37650-67D9-421E-8866-50037CDBC4A6}|Application\\Application.csproj|d:\\project\\clothingappapi\\application\\dtos\\clothesdto\\clothesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +82,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 18,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Security\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "Infrastructures\\Security\\JwtTokenGenerator.cs",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Security\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "Infrastructures\\Security\\JwtTokenGenerator.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:55:49.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IJwtTokenGenerator.cs",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\DTOs\\IJwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\IJwtTokenGenerator.cs",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\DTOs\\IJwtTokenGenerator.cs",
+              "RelativeToolTip": "Application\\DTOs\\IJwtTokenGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:48:47.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserAccountsController.cs",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\Controllers\\UserAccountsController.cs",
+              "RelativeDocumentMoniker": "ClothingAppAPI\\Controllers\\UserAccountsController.cs",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\Controllers\\UserAccountsController.cs",
+              "RelativeToolTip": "ClothingAppAPI\\Controllers\\UserAccountsController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAswF0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:44:04.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserAccountService.cs",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Interfaces\\IUserAccountService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IUserAccountService.cs",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Interfaces\\IUserAccountService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IUserAccountService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:28:00.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserAccountRepository.cs",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Repositories\\IUserAccountRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Repositories\\IUserAccountRepository.cs",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Repositories\\IUserAccountRepository.cs",
+              "RelativeToolTip": "Application\\Repositories\\IUserAccountRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAADwvxMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:13:41.643Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -106,52 +195,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "UserAccountService.cs",
+              "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Services\\UserAccountService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UserAccountService.cs",
+              "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Services\\UserAccountService.cs",
+              "RelativeToolTip": "Application\\Services\\UserAccountService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwDAAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T19:12:34.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "UserAccountRepository.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Repositories\\UserAccountRepository.cs",
               "RelativeDocumentMoniker": "Infrastructures\\Repositories\\UserAccountRepository.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Repositories\\UserAccountRepository.cs",
               "RelativeToolTip": "Infrastructures\\Repositories\\UserAccountRepository.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAuwGkAAAAAAAAA",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAIwNYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T19:01:06.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "CloudinaryService.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Services\\CloudinaryService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\CloudinaryService.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Services\\CloudinaryService.cs",
               "RelativeToolTip": "Application\\Services\\CloudinaryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T06:02:12.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "ICloudinaryService.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Interfaces\\ICloudinaryService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\ICloudinaryService.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Interfaces\\ICloudinaryService.cs",
               "RelativeToolTip": "Application\\Interfaces\\ICloudinaryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T06:01:42.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "IClothesRepository.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Repositories\\IClothesRepository.cs",
               "RelativeDocumentMoniker": "Application\\Repositories\\IClothesRepository.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Repositories\\IClothesRepository.cs",
               "RelativeToolTip": "Application\\Repositories\\IClothesRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T05:52:48.289Z",
               "EditorCaption": ""
@@ -164,14 +266,14 @@
               "RelativeDocumentMoniker": "ClothingAppAPI\\Controllers\\ClothesController.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\Controllers\\ClothesController.cs",
               "RelativeToolTip": "ClothingAppAPI\\Controllers\\ClothesController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA8wBcAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T05:51:49.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "ClothesRepository.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Infrastructures\\Repositories\\ClothesRepository.cs",
               "RelativeDocumentMoniker": "Infrastructures\\Repositories\\ClothesRepository.cs",
@@ -190,14 +292,14 @@
               "RelativeDocumentMoniker": "Application\\Services\\ClothesService.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\Services\\ClothesService.cs",
               "RelativeToolTip": "Application\\Services\\ClothesService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwCIAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T05:49:14.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "IClothesService.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\Interfaces\\IClothesService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IClothesService.cs",
@@ -210,20 +312,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "ClothesCreateUpdateDTO.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\DTOs\\ClothesDTO\\ClothesCreateUpdateDTO.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ClothesDTO\\ClothesCreateUpdateDTO.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\Application\\DTOs\\ClothesDTO\\ClothesCreateUpdateDTO.cs",
               "RelativeToolTip": "Application\\DTOs\\ClothesDTO\\ClothesCreateUpdateDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T05:46:44.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "ClothesDTO.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\Application\\DTOs\\ClothesDTO\\ClothesDTO.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ClothesDTO\\ClothesDTO.cs",
@@ -236,26 +338,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\Program.cs",
               "RelativeDocumentMoniker": "ClothingAppAPI\\Program.cs",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\Program.cs",
               "RelativeToolTip": "ClothingAppAPI\\Program.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAF0AAAA8AAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T05:55:13.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\appsettings.json",
               "RelativeDocumentMoniker": "ClothingAppAPI\\appsettings.json",
               "ToolTip": "D:\\Project\\ClothingAppAPI\\ClothingAppAPI\\appsettings.json",
               "RelativeToolTip": "ClothingAppAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-21T05:48:37.948Z",
               "EditorCaption": ""

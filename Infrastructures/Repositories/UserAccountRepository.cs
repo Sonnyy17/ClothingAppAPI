@@ -210,6 +210,17 @@ namespace Infrastructure.Repositories
             _context.UserAccounts.Remove(user);
             await _context.SaveChangesAsync();
         }
+        public async Task UpdateLastLoginDateAsync(string username)
+        {
+            var user = await _context.UserAccounts
+                .FirstOrDefaultAsync(u => u.Username == username);
+
+            if (user != null)
+            {
+                user.LastLoginDate = DateTime.Now;
+                await _context.SaveChangesAsync();
+            }
+        }
 
         public async Task<string> GenerateNewUserIdAsync()
         {

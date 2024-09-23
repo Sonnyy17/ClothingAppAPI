@@ -3,6 +3,7 @@ using Application.Repositories;
 using Application.Services;
 using Infrastructure;
 using Infrastructure.Repositories;
+using Infrastructure.Security;
 using Infrastructure.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -43,6 +44,7 @@ builder.Services.AddScoped<IClothesCategoryRepository, ClothesCategoryRepository
 builder.Services.AddScoped<IUserAccountRepository, UserAccountRepository>();
 builder.Services.AddScoped<IClothesRepository, ClothesRepository>();
 
+
 // Cấu hình cho CloudinarySettings
 builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 // Add controllers
@@ -53,6 +55,26 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+// Cấu hình JWT Token Generator
+builder.Services.AddSingleton<IJwtTokenGenerator>(sp =>
+{
+    var configuration = sp.GetRequiredService<IConfiguration>();
+    var secretKey = configuration["JwtSettings:SecretKey"];
+    var issuer = configuration["JwtSettings:Issuer"];
+    var audience = configuration["JwtSettings:Audience"];
+    var expirationMinutesString = configuration["JwtSettings:ExpirationMinutes"];
+    if (string.IsNullOrEmpty(secretKey) || string.IsNullOrEmpty(issuer) || string.IsNullOrEmpty(audience) || string.IsNullOrEmpty(expirationMinutesString))
+    {
+        throw new ArgumentNullException("Một trong các giá trị JwtSettings không được để trống.");
+    }
+
+    if (!int.TryParse(expirationMinutesString, out int expirationMinutes))
+    {
+        throw new ArgumentException("ExpirationMinutes phải là một số hợp lệ.");
+    }
+
+    return new JwtTokenGenerator(secretKey, expirationMinutes);
+});
 
 // Cấu hình JWT Authentication
 builder.Services.AddAuthentication(options =>

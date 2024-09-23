@@ -60,7 +60,7 @@ namespace ClothingAppAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        /*
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginAccountDTO loginDTO)
         {
@@ -72,6 +72,24 @@ namespace ClothingAppAPI.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+        */
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginAccountDTO loginDto)
+        {
+            try
+            {
+                var token = await _userAccountService.LoginAsync(loginDto);
+                return Ok(new { Token = token });
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "Internal Server Error", Details = ex.Message });
             }
         }
         [HttpPut]
