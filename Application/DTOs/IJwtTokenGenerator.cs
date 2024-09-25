@@ -9,5 +9,7 @@ namespace Infrastructure.Security
     public interface IJwtTokenGenerator
     {
         string GenerateToken(string userId, string username, string roleId);
+        string GetUserIdFromToken(string token);
+
     }
 }

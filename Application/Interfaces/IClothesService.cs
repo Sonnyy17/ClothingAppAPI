@@ -9,8 +9,10 @@ namespace Application.Interfaces
 {
     public interface IClothesService
     {
-        Task<ClothesDTO> CreateClothesAsync(ClothesCreateUpdateDTO clothesDto, string userId);
-        Task<List<ClothesDTO>> GetAllClothesByUserAsync(string userId);
-        Task<ClothesDTO> GetClothesByIdAsync(string clothesId);
+        Task CreateClothesAsync(string userId, CreateClothesDTO dto);
+        Task UpdateClothesAsync(string clothesId, UpdateClothesDTO dto);
+        Task DeleteClothesAsync(string clothesId);
+        Task<List<ClothesResponseDTO>> SearchMultipleAsync(string userId, List<string> categoryIds);
+        Task<ClothesResponseDTO> SearchOneAsync(string clothesId);
     }
 }

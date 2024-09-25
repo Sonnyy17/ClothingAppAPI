@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Application.DTOs.ClothesDTO
+{
+    public class ClothesResponseDTO
+    {
+        public string ClothesID { get; set; }
+        public string ClothesName { get; set; }
+        public string Description { get; set; }
+        public string ImagePath { get; set; }
+        public DateTime CreatedDate { get; set; }
+
+        // Thêm danh sách các CategoryID
+        public List<string> CategoryIDs { get; set; }
+    }
+
+}

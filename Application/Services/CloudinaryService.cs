@@ -37,5 +37,13 @@ namespace Application.Services
 
             return null;
         }
+        public async Task<bool> DeleteImageAsync(string publicId)
+        {
+            var deletionParams = new DeletionParams(publicId);
+            var result = await _cloudinary.DestroyAsync(deletionParams);
+
+            // Kiểm tra kết quả trả về để xác định xóa có thành công không
+            return result.Result == "ok";
+        }
     }
 }
