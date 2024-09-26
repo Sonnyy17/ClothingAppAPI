@@ -35,11 +35,25 @@ namespace Application.Services
 
         public async Task UpdateAsync(string categoryId, ClothesCategoryCreateUpdateDTO categoryDTO)
         {
+            // Xử lý cập nhật và thông báo
+            var existingCategory = await _repository.GetByIdAsync(categoryId);
+            if (existingCategory == null)
+            {
+                throw new Exception("Category not found.");
+            }
+
             await _repository.UpdateAsync(categoryId, categoryDTO);
         }
 
         public async Task DeleteAsync(string categoryId)
         {
+            // Kiểm tra tồn tại và xóa
+            var existingCategory = await _repository.GetByIdAsync(categoryId);
+            if (existingCategory == null)
+            {
+                throw new Exception("Category not found.");
+            }
+
             await _repository.DeleteAsync(categoryId);
         }
 
@@ -48,4 +62,5 @@ namespace Application.Services
             return await _repository.GetCategoryByTypeAsync(categoryType);
         }
     }
+
 }

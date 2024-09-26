@@ -15,7 +15,9 @@ namespace Application.Repositories
         Task AddImageAsync(string clothesId, string imagePath);
         Task AddCategoriesAsync(string clothesId, List<string> categoryIds);
         Task DeleteCategoriesAsync(string clothesId);
-        Task UpdateClothesAsync(Clothes clothes);
+        //Task UpdateClothesAsync(Clothes clothes);
+        Task UpdateClothesAsync(Clothes clothes, List<string> newCategoryIDs);
+        Task<List<string>> ValidateCategoryIdsAsync(List<string> categoryIds);
         Task DeleteClothesAsync(string clothesId);
         Task<List<Clothes>> SearchMultipleAsync(string userId, List<string> categoryIds);
         Task<Clothes> SearchOneAsync(string clothesId);
@@ -24,6 +26,8 @@ namespace Application.Repositories
         Task<List<string>> GetCategoryIdsForClothesAsync(string clothesId);
 
         Task<string> GetImagePathAsync(string clothesId);
+
+
     }
 
 }

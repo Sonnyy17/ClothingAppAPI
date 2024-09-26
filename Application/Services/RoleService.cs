@@ -23,6 +23,7 @@ namespace Application.Services
         {
             // Sinh RoleId mới theo cấu trúc ROLE_1, ROLE_2...
             string newRoleId = await _roleRepository.GenerateNewRoleIdAsync();
+
             var newRole = new RoleDTO
             {
                 RoleId = newRoleId,
@@ -31,7 +32,8 @@ namespace Application.Services
             };
 
             await _roleRepository.CreateAsync(newRole);
-            return newRoleId;
+
+            return newRoleId; // Đảm bảo trả về RoleId dưới dạng string
         }
 
         public async Task<IEnumerable<RoleDTO>> GetAllRolesAsync()
@@ -52,8 +54,16 @@ namespace Application.Services
                 return false;
             }
 
-            existingRole.RoleName = roleDto.RoleName;
-            existingRole.Description = roleDto.Description;
+            // Chỉ cập nhật nếu có giá trị mới
+            if (!string.IsNullOrEmpty(roleDto.RoleName))
+            {
+                existingRole.RoleName = roleDto.RoleName;
+            }
+
+            if (!string.IsNullOrEmpty(roleDto.Description))
+            {
+                existingRole.Description = roleDto.Description;
+            }
 
             return await _roleRepository.UpdateAsync(existingRole);
         }
@@ -63,4 +73,5 @@ namespace Application.Services
             return await _roleRepository.DeleteAsync(roleId);
         }
     }
+
 }

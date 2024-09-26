@@ -27,7 +27,7 @@ namespace ClothingAppAPI.Controllers
         public async Task<IActionResult> GetById(string id)
         {
             var result = await _service.GetByIdAsync(id);
-            if (result == null) return NotFound();
+            if (result == null) return NotFound(new { message = "Category not found." });
             return Ok(result);
         }
 
@@ -41,15 +41,29 @@ namespace ClothingAppAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] ClothesCategoryCreateUpdateDTO categoryDTO)
         {
-            await _service.UpdateAsync(id, categoryDTO);
-            return NoContent();
+            try
+            {
+                await _service.UpdateAsync(id, categoryDTO);
+                return Ok(new { message = "Category updated successfully." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
-            await _service.DeleteAsync(id);
-            return NoContent();
+            try
+            {
+                await _service.DeleteAsync(id);
+                return Ok(new { message = "Category deleted successfully." });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpGet("by-type/{categoryType}")]
@@ -59,4 +73,5 @@ namespace ClothingAppAPI.Controllers
             return Ok(result);
         }
     }
+
 }

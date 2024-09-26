@@ -19,7 +19,8 @@ namespace ClothingAppAPI.Controllers
         public async Task<IActionResult> CreateRole(RoleCreateUpdateDTO roleDto)
         {
             var roleId = await _roleService.CreateRoleAsync(roleDto);
-            return Ok(new { RoleId = roleId });
+            var createdRole = await _roleService.GetRoleByIdAsync(roleId); // Lấy thông tin Role mới tạo
+            return CreatedAtAction(nameof(GetRoleById), new { roleId = createdRole.RoleId }, createdRole); // Trả về RoleDTO
         }
 
         [HttpGet]
@@ -46,9 +47,10 @@ namespace ClothingAppAPI.Controllers
             var success = await _roleService.UpdateRoleAsync(roleId, roleDto);
             if (!success)
             {
-                return NotFound();
+                return NotFound("Role ID không tồn tại."); // Thông báo rõ ràng
             }
-            return NoContent();
+            var updatedRole = await _roleService.GetRoleByIdAsync(roleId); // Lấy Role đã cập nhật
+            return Ok(new { Message = "Cập nhật thành công.", Role = updatedRole }); // Trả về Role đã cập nhật
         }
 
         [HttpDelete("{roleId}")]
@@ -57,9 +59,10 @@ namespace ClothingAppAPI.Controllers
             var success = await _roleService.DeleteRoleAsync(roleId);
             if (!success)
             {
-                return NotFound();
+                return NotFound("Role ID không tồn tại."); // Thông báo rõ ràng
             }
-            return NoContent();
+            return Ok(new { Message = "Xóa thành công." }); // Thông báo khi xóa thành công
         }
     }
+
 }

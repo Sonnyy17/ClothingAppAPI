@@ -22,9 +22,8 @@ namespace Infrastructure.Repositories
 
         public async Task<string> GenerateNewRoleIdAsync()
         {
-            var lastRole = _context.Roles.OrderByDescending(r => r.RoleID).FirstOrDefault();
-            int newId = lastRole == null ? 1 : int.Parse(lastRole.RoleID.Split('_')[1]) + 1;
-            return $"ROLE_{newId}";
+            var count = await _context.Roles.CountAsync();
+            return $"ROLE_{count + 1}";
         }
 
         public async Task CreateAsync(RoleDTO role)
@@ -42,12 +41,12 @@ namespace Infrastructure.Repositories
 
         public async Task<IEnumerable<RoleDTO>> GetAllAsync()
         {
-            return _context.Roles.Select(r => new RoleDTO
+            return await _context.Roles.Select(r => new RoleDTO
             {
                 RoleId = r.RoleID,
                 RoleName = r.RoleName,
                 Description = r.Description
-            }).ToList();
+            }).ToListAsync();
         }
 
         public async Task<RoleDTO> GetByIdAsync(string roleId)
@@ -68,8 +67,17 @@ namespace Infrastructure.Repositories
             var entity = await _context.Roles.FindAsync(role.RoleId);
             if (entity == null) return false;
 
-            entity.RoleName = role.RoleName;
-            entity.Description = role.Description;
+            // Chỉ cập nhật nếu RoleName và Description có giá trị mới
+            if (!string.IsNullOrEmpty(role.RoleName))
+            {
+                entity.RoleName = role.RoleName;
+            }
+            if (!string.IsNullOrEmpty(role.Description))
+            {
+                entity.Description = role.Description;
+            }
+
+            _context.Roles.Update(entity);
             await _context.SaveChangesAsync();
 
             return true;
@@ -86,4 +94,5 @@ namespace Infrastructure.Repositories
             return true;
         }
     }
+
 }

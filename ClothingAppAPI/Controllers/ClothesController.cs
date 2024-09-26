@@ -30,7 +30,6 @@ namespace ClothingAppAPI.Controllers
         {
             try
             {
-                // Giả sử UserID được lấy từ hệ thống xác thực
                 // Lấy token từ Authorization header
                 var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", string.Empty);
                 var userId = _tokenGenerator.GetUserIdFromToken(token);
@@ -56,7 +55,7 @@ namespace ClothingAppAPI.Controllers
                 return BadRequest(new { message = "An unexpected error occurred." });
             }
         }
-
+        /*
         // Phương thức cập nhật Clothes
         [HttpPut("{clothesId}")]
         public async Task<IActionResult> UpdateClothes(string clothesId, [FromBody] UpdateClothesDTO dto)
@@ -70,7 +69,50 @@ namespace ClothingAppAPI.Controllers
             {
                 return BadRequest(new { message = ex.Message });
             }
+        }*/
+
+        /*
+        public async Task UpdateClothesAsync(string clothesId, UpdateClothesDTO dto)
+        {
+            var clothes = await _clothesRepository.SearchOneAsync(clothesId);
+            if (clothes == null)
+            {
+                throw new Exception("Clothes not found");
+            }
+
+            // Giữ nguyên giá trị cũ nếu các trường không có giá trị mới
+            clothes.ClothesName = !string.IsNullOrEmpty(dto.ClothesName) ? dto.ClothesName : clothes.ClothesName;
+            clothes.Description = !string.IsNullOrEmpty(dto.Description) ? dto.Description : clothes.Description;
+
+            // Kiểm tra các CategoryIDs có tồn tại trong database không
+            if (dto.CategoryIDs != null && dto.CategoryIDs.Any())
+            {
+                var validCategoryIds = await _clothesRepository.ValidateCategoryIdsAsync(dto.CategoryIDs);
+                if (validCategoryIds.Count != dto.CategoryIDs.Count)
+                {
+                    throw new Exception("Some category IDs are invalid.");
+                }
+            }
+
+            // Cập nhật quần áo và danh mục
+            await _clothesRepository.UpdateClothesAsync(clothes, dto.CategoryIDs);
+        }*/
+
+        [HttpPut("{clothesId}")]
+        public async Task<IActionResult> UpdateClothes(string clothesId, [FromBody] UpdateClothesDTO dto)
+        {
+            try
+            {
+                await _clothesService.UpdateClothesAsync(clothesId, dto);
+                return Ok(new { message = "Clothes updated successfully" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
+
+
 
         // Phương thức xóa Clothes
         [HttpDelete("{clothesId}")]
@@ -87,6 +129,7 @@ namespace ClothingAppAPI.Controllers
             }
         }
 
+
         // Phương thức tìm kiếm nhiều Clothes theo CategoryIDs
         [HttpGet("search")]
         public async Task<IActionResult> SearchMultiple([FromQuery] List<string> categoryIds)
@@ -94,8 +137,9 @@ namespace ClothingAppAPI.Controllers
             try
             {
                 // Giả sử UserID được lấy từ hệ thống xác thực
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
+                var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", string.Empty);
+                var userId = _tokenGenerator.GetUserIdFromToken(token);
+                
                 var clothesList = await _clothesService.SearchMultipleAsync(userId, categoryIds);
                 return Ok(clothesList);
             }

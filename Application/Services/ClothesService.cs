@@ -94,29 +94,46 @@ namespace Application.Services
 
         public async Task UpdateClothesAsync(string clothesId, UpdateClothesDTO dto)
         {
+            // Tìm quần áo theo ClothesID
             var clothes = await _clothesRepository.SearchOneAsync(clothesId);
             if (clothes == null)
             {
                 throw new Exception("Clothes not found");
             }
 
-            clothes.ClothesName = dto.ClothesName;
-            clothes.Description = dto.Description;
+            // Giữ nguyên giá trị cũ nếu các trường không có giá trị mới
+            clothes.ClothesName = !string.IsNullOrEmpty(dto.ClothesName) ? dto.ClothesName : clothes.ClothesName;
+            clothes.Description = !string.IsNullOrEmpty(dto.Description) ? dto.Description : clothes.Description;
 
-            await _clothesRepository.UpdateClothesAsync(clothes);
-
-            // Update categories
-            await _clothesRepository.DeleteCategoriesAsync(clothesId);
+            // Kiểm tra các CategoryIDs có tồn tại trong database không
             if (dto.CategoryIDs != null && dto.CategoryIDs.Any())
             {
-                await _clothesRepository.AddCategoriesAsync(clothesId, dto.CategoryIDs);
+                var validCategoryIds = await _clothesRepository.ValidateCategoryIdsAsync(dto.CategoryIDs);
+                if (validCategoryIds.Count != dto.CategoryIDs.Count)
+                {
+                    throw new Exception("Some category IDs are invalid.");
+                }
             }
+
+            // Cập nhật quần áo và danh mục
+            await _clothesRepository.UpdateClothesAsync(clothes, dto.CategoryIDs);
         }
+
+
 
         public async Task DeleteClothesAsync(string clothesId)
         {
+            // Kiểm tra nếu ClothesID không tồn tại và ném ngoại lệ nếu không tìm thấy
+            var clothes = await _clothesRepository.SearchOneAsync(clothesId);
+            if (clothes == null)
+            {
+                throw new Exception("Clothes not found.");
+            }
+
+            // Nếu tồn tại, tiến hành xóa
             await _clothesRepository.DeleteClothesAsync(clothesId);
         }
+
 
         public async Task<List<ClothesResponseDTO>> SearchMultipleAsync(string userId, List<string> categoryIds)
         {

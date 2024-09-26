@@ -71,11 +71,19 @@ namespace Infrastructure.Repositories
             var category = await _context.ClothesCategories.FindAsync(categoryId);
             if (category != null)
             {
-                category.CategoryName = categoryDTO.CategoryName;
-                category.CategoryType = categoryDTO.CategoryType;
+                // Kiểm tra và cập nhật chỉ các trường có dữ liệu mới
+                if (!string.IsNullOrEmpty(categoryDTO.CategoryName))
+                    category.CategoryName = categoryDTO.CategoryName;
+
+                if (!string.IsNullOrEmpty(categoryDTO.CategoryType))
+                    category.CategoryType = categoryDTO.CategoryType;
 
                 _context.ClothesCategories.Update(category);
                 await _context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new Exception("Category not found.");
             }
         }
 
@@ -86,6 +94,10 @@ namespace Infrastructure.Repositories
             {
                 _context.ClothesCategories.Remove(category);
                 await _context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new Exception("Category not found.");
             }
         }
 
@@ -101,22 +113,29 @@ namespace Infrastructure.Repositories
                 })
                 .ToListAsync();
         }
-
         public async Task<string> GenerateNewCategoryIdAsync()
         {
-            // Generate the next ID based on existing IDs
-            var maxId = await _context.ClothesCategories
-                .OrderByDescending(c => c.CategoryID)
-                .Select(c => c.CategoryID)
-                .FirstOrDefaultAsync();
+            /*var lastCategory = await _context.ClothesCategories
+                                             .OrderByDescending(c => c.CategoryID)
+                                             .FirstOrDefaultAsync();
 
-            int nextId = 1;
-            if (!string.IsNullOrEmpty(maxId))
+            int nextNumber = 1;
+
+            if (lastCategory != null)
             {
-                nextId = int.Parse(maxId.Split('_').Last()) + 1;
+                if (int.TryParse(lastCategory.CategoryID, out int lastNumber))
+                {
+                    nextNumber = lastNumber + 1;
+                }
             }
 
-            return $"CA_{nextId}";
+            return nextNumber.ToString().PadLeft(2, '0');*/
+            var count = await _context.ClothesCategories.CountAsync();
+            return $"CA_{count + 1}";
         }
+
+
+
     }
+
 }

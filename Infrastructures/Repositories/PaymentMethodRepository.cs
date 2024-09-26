@@ -46,9 +46,13 @@ namespace Infrastructure.Repositories
 
         public async Task<PaymentMethodDTO> CreateAsync(PaymentMethodCreateUpdateDTO paymentMethodDTO)
         {
-            // Tạo đối tượng PaymentMethod mới mà không gán ID từ DTO
+            // Tạo ID mới theo định dạng METHOD_1, METHOD_2, ...
+            var newPaymentMethodID = await GenerateNewPaymentMethodIdAsync();
+
+            // Tạo đối tượng PaymentMethod mới với ID mới
             var paymentMethod = new PaymentMethod
             {
+                PaymentMethodID = newPaymentMethodID,
                 MethodName = paymentMethodDTO.PaymentMethodName,
                 Description = paymentMethodDTO.Description
             };
@@ -60,7 +64,7 @@ namespace Infrastructure.Repositories
             // Trả về DTO đã được gán ID mới
             return new PaymentMethodDTO
             {
-                PaymentMethodID = paymentMethod.PaymentMethodID, // ID đã được sinh ra tự động
+                PaymentMethodID = paymentMethod.PaymentMethodID,
                 PaymentMethodName = paymentMethod.MethodName,
                 Description = paymentMethod.Description
             };
@@ -71,8 +75,15 @@ namespace Infrastructure.Repositories
             var paymentMethod = await _context.PaymentMethods.FindAsync(paymentMethodID);
             if (paymentMethod == null) return false;
 
-            paymentMethod.MethodName = paymentMethodDTO.PaymentMethodName;
-            paymentMethod.Description = paymentMethodDTO.Description;
+            // Chỉ cập nhật nếu DTO có dữ liệu
+            if (!string.IsNullOrEmpty(paymentMethodDTO.PaymentMethodName))
+            {
+                paymentMethod.MethodName = paymentMethodDTO.PaymentMethodName;
+            }
+            if (!string.IsNullOrEmpty(paymentMethodDTO.Description))
+            {
+                paymentMethod.Description = paymentMethodDTO.Description;
+            }
 
             _context.PaymentMethods.Update(paymentMethod);
             await _context.SaveChangesAsync();
@@ -93,10 +104,9 @@ namespace Infrastructure.Repositories
 
         public async Task<string> GenerateNewPaymentMethodIdAsync()
         {
-            // Generate a new PaymentMethodID according to your needs.
-            // Example: ROLE_1, ROLE_2, etc.
             var count = await _context.PaymentMethods.CountAsync();
             return $"METHOD_{count + 1}";
         }
     }
+
 }
