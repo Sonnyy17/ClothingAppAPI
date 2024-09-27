@@ -35,6 +35,7 @@ builder.Services.AddScoped<IPaymentMethodService, PaymentMethodService>();
 builder.Services.AddScoped<IClothesCategoryService, ClothesCategoryService>();
 builder.Services.AddScoped<IUserAccountService, UserAccountService>();
 builder.Services.AddScoped<IClothesService, ClothesService>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
 
 
 // Thêm các repository vào DI container
@@ -43,6 +44,7 @@ builder.Services.AddScoped<IPaymentMethodRepository, PaymentMethodRepository>();
 builder.Services.AddScoped<IClothesCategoryRepository, ClothesCategoryRepository>();
 builder.Services.AddScoped<IUserAccountRepository, UserAccountRepository>();
 builder.Services.AddScoped<IClothesRepository, ClothesRepository>();
+builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
 
 
 // Cấu hình cho CloudinarySettings
