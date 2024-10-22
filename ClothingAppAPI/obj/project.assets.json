@@ -2819,7 +2819,9 @@
           "CloudinaryDotNet": "1.26.2",
           "Domain": "1.0.0",
           "MediatR": "12.4.1",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
           "Portable.BouncyCastle": "1.9.0"
         },
